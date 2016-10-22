@@ -1,0 +1,368 @@
+body, section, header, div, span, ul, li, p, img, figure, h3, a {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+a, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    &:hover, &:focus {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+}
+
+html {
+    font-size: 37.5px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #A4CCF0;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+    white-space: nowrap;
+    li {
+        display: inline-block;
+        font-size: 1rem;
+    }
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: normal;
+    > header {
+        padding: .5rem 0;
+        p {
+            font-size: 0.533rem; /* 20/37.5 */
+            span {
+                margin-left: 0.8em;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    // parent's font-size will influence children's style whoes display is inline-*;
+    display: block;
+    color: #fff;
+    &.btn-small {
+        display: inline-block;
+        width: 4rem;
+        height: 1.15rem;
+        line-height: 1.15rem;
+        font-size: 0.48rem; /* 18/37.5 */
+        background: #5189BA;
+        box-shadow: 0.05rem 0.11rem 0 #3D6086;
+        border-radius: 0.427rem; /* 16/37.5 */
+        &:first-of-type {
+            margin-right: .5rem;
+        }
+    }
+}
+
+#btn-discuss, #btn-again {
+    font-size: 0.48rem; /* 18/37.5 */
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    // overflow: hidden;
+    // padding: .5rem 0;
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        margin-top: -0.533rem; /* -20/37.5 */
+        width: 0; /* 40/37.5 */
+        height: 0;
+        border: 0.533rem solid; /* 20/37.5 */
+    }
+    &::before {
+        left: -0.293rem; /* -11/37.5 */
+        border-color: transparent #fff transparent transparent;
+    }
+    &::after {
+        right: -0.293rem; /* -11/37.5 */
+        border-color: transparent transparent transparent #fff;
+    }
+}
+
+$card-name: (thing, time, place, people, event);
+$card-color: (
+    time: (
+        bg: #D4E9FE,
+        circle1: #719DCA,
+        circle2: #5581AE,
+        headcolor: #124F8A,
+        pcolor: #5A80A5
+    ),
+    thing:(
+        bg: #FAEAB6,
+        circle1: #F4D578,
+        circle2: #E5C04E,
+        headcolor: #7C651B,
+        pcolor: #AA9759
+    ),
+    place: (
+        bg: #F0C2DE,
+        circle1: #D799BE,
+        circle2: #C97AAA,
+        headcolor: #661748,
+        pcolor: #7B6472
+    ),
+    people: (
+        bg: #DECEEB,
+        circle1: #BDA1D4,
+        circle2: #9876B3,
+        headcolor: #482268,
+        pcolor: #65497D
+    ),
+    event: (
+        bg: #C3EEE7,
+        circle1: #98E1D6,
+        circle2: #40C1AD,
+        headcolor: #127365,
+        pcolor: #238779
+    )
+);
+
+@mixin card-color($name, $flat:1) {
+    .card-#{$name} {
+
+        @if $flat == 1 {
+            box-shadow: 0 0.008rem 0.041rem 0 map-get(map-get($card-color, $name),circle2), 0 0.016rem 0.016rem 0 map-get(map-get($card-color, $name),circle2); /* 0.027/3.22, 0.133/3.22, 0.053/3.22, 0.053/3.22 */
+            background: map-get(map-get($card-color, $name),bg) url(../img/card/#{$name}.jpg);
+            &::before {
+                border: 0.383rem solid map-get(map-get($card-color, $name),circle1); /* 1.34/3.5 */
+            }
+            &::after {
+                border: 0.191rem solid map-get(map-get($card-color, $name),circle2); /* 0.67/3.5 */
+            }
+        }
+        @if $flat == 0 {
+            box-shadow: 0 0.027rem 0.133rem 0rem map-get(map-get($card-color, $name),circle2), 0 0.053rem 0.053rem 0rem map-get(map-get($card-color, $name),circle2); /* 1/37.5, 5/37.5, 0/37.5, 2/37.5, 2/37.5, 0/37.5 */
+            header {
+                color: map-get(map-get($card-color, $name),headcolor);
+            }
+            p {
+                color: map-get(map-get($card-color, $name),pcolor);
+            }
+        }
+    }
+}
+
+@mixin cardPos {
+    &[data-index='0']{
+        transform: translateX(-2.9rem) translateZ(-4.2rem);
+    }
+    &[data-index='1'] {
+        transform: translateX(-1.4rem) translateZ(-2.1rem);
+    }
+    &[data-index='2'] {
+        transform: translateX(0) translateZ(0);
+    }
+    &[data-index='3'] {
+        transform: translateX(1.4rem) translateZ(-2.1rem);
+    }
+    &[data-index='4'] {
+        transform: translateX(2.9rem) translateZ(-4.2rem);
+    }
+}
+
+.card-wrap {
+    margin: 0 auto;
+    width: 5.92rem;
+    height: 7.73rem;
+    transform-style: preserve-3d;
+    perspective: 10rem;
+}
+
+.card {
+    background-color: #fff;
+    width: 5.92rem;
+    height: 7.73rem;
+    border-radius: 0.37rem;
+}
+
+.controller-area {
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2rem;
+    left: 0;
+    z-index: 2;
+    &.next {
+        right: 0;
+        left: auto;
+    }
+}
+
+.card-front {
+    .card {
+        position: absolute;
+        transition: transform .8s;
+        @include cardPos;
+        img {
+            margin: 0.96rem 0 0.16rem; /* 36/37.5 */
+            width: 2.453rem; /* 92/37.5 */
+            height: 2.293rem; /* 86/37.5 */
+        }
+        header {
+            font-size: 1.013rem; /* 38/37.5 */
+            line-height: 1;
+            small {
+                display: block;
+                font-size: .4em;
+            }
+        }
+        p {
+            margin-top: .5rem;
+            font-size: 0.48rem; /* 18/37.5 */
+            line-height: 1.3;
+            span {
+                margin-left: 0.16rem; /* 6/37.5 */
+            }
+            span:nth-child(1),span:nth-child(5) {
+                margin-left: 0;
+            }
+        }
+    }
+    @for $i from 1 through length($card-name) {
+        @include card-color(nth($card-name,$i), 0);
+    }
+}
+
+// Card-list
+.card-list {
+    margin-top: 0.9rem;
+    margin-left: -0.225rem;
+    margin-bottom: 0.907rem; /* 34/37.5 */
+    position: relative;
+    .card-small {
+        position: relative;
+        width: 1.73rem;
+        height: 2.4rem;
+        border: 1px solid #8D99A7;
+        border-radius: 0.32rem;
+        overflow: hidden;
+        margin-left: 0.225rem;
+        background-size: cover !important;
+        transition: transform .5s;
+        &.active {
+            transform: translateY(-10%);
+        }
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            transform: scaleY(1) scaleX(0.9);
+        }
+        &::before {
+            left: 0.097rem; /* 0.34/3.5 */
+            bottom: -0.749rem; /* -2.62/3.5 */
+            padding: 0.366rem; /* 1.28/3.5 */
+        }
+        &::after {
+            left: 0.289rem; /* 1.01/3.5 */
+            bottom: -0.557rem; /* -1.95/3.5 */
+            padding: 0.366rem; /* 1.28/3.5 */
+        };
+        header {
+            margin: 0.311rem auto 0.447rem; /* 1/3.22, 1.44/3.22 */
+            width: 1em;
+            line-height: 1.05;
+            font-size: 0.364rem /* 1.173/3.22 */;
+            font-weight: bold;
+            white-space: normal;
+        }
+        figure {
+            font-size: 0;
+            &::after{
+                content: "";
+                display: block;
+                margin: 0.025rem auto 0; /* 0.08/3.22 */
+                height: 0.058rem; /* 0.187/3.22 */
+                width: 0.414rem; /* 1.333/3.22 */
+                background: rgba(0,0,0,.6);
+                border-radius: 50%;
+            }
+        }
+        img {
+            height: 0.712rem; /* 2.293/3.22 */
+            position: relative;
+            z-index: 1;
+        }
+    }
+    @for $i from 1 through length($card-name) {
+        @include card-color(nth($card-name,$i));
+    }
+}
+
+#share-layout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    text-align: center;
+    transition: opacity .5s;
+    background: rgba(0,0,0,.35);
+    pointer-events: auto;
+    // pointer-events: none;
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    img:first-of-type {
+        vertical-align: middle;
+        width: 3.333rem; /* 125/37.5 */
+        height: 5.04rem; /* 189/37.5 */
+    }
+    img:last-of-type {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2.347rem; /* 88/37.5 */
+        height: 4.267rem; /* 160/37.5 */
+    }
+    p {
+        position: absolute;
+        top: 50%;
+        margin-top: 3rem;
+        width: 100%;
+        color: #fff;
+        font-size: 0.64rem; /* 24/37.5 */
+    }
+}
