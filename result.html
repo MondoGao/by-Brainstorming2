@@ -9,12 +9,51 @@
     <body>
         <section>
             <header>
-                <p><span></span><span></span><span></span><span></span><span></span></p>
+                <p><span>森森</span><span>森森</span><span>森森</span><span>森森</span><span>森森</span></p>
             </header>
             <div class="card-container card-front">
                 <!-- 前向箭头 -->
                 <div id="card-result" class="card-wrap">
-
+                    <div class="card card-time" data-index="0" data-order="0">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
+                    <div class="card card-place" data-index="1" data-order="1">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
+                    <div class="card card-people" data-index="2" data-order="2">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
+                    <div class="card card-thing" data-index="3" data-order="3">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
+                    <div class="card card-event" data-index="4" data-order="4">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
                 </div>
                 <template id="card-template">
                     <div class="card">
@@ -31,14 +70,59 @@
                 <div class="controller-area next"></div>
             </div>
             <ul class="card-list">
-                <li class="empty"></li>
-                <li class="empty"></li>
-                <li class="empty"></li>
-                <li class="empty"></li>
-                <li class="empty"></li>
+                <li class="card-small card-time" data-index="0">
+                    <header>
+                        时间
+                    </header>
+                    <!-- 背景圈圈 -->
+                    <figure>
+                        <img src="img/icon/time.svg" alt="" />
+                        <div class="icon-shadow"></div>
+                    </figure>
+                </li>
+                <li class="card-small card-place" data-index="1">
+                    <header>
+                        地点
+                    </header>
+                    <!-- 背景圈圈 -->
+                    <figure>
+                        <img src="img/icon/place.svg" alt="" />
+                        <div class="icon-shadow"></div>
+                    </figure>
+                </li>
+                <li class="card-small card-people" data-index="2">
+                    <header>
+                        人物
+                    </header>
+                    <!-- 背景圈圈 -->
+                    <figure>
+                        <img src="img/icon/people.svg" alt="" />
+                        <div class="icon-shadow"></div>
+                    </figure>
+                </li>
+                <li class="card-small card-thing" data-index="3">
+                    <header>
+                        物品
+                    </header>
+                    <!-- 背景圈圈 -->
+                    <figure>
+                        <img src="img/icon/thing.svg" alt="" />
+                        <div class="icon-shadow"></div>
+                    </figure>
+                </li>
+                <li class="card-small card-event" data-index="4">
+                    <header>
+                        事件
+                    </header>
+                    <!-- 背景圈圈 -->
+                    <figure>
+                        <img src="img/icon/event.svg" alt="" />
+                        <div class="icon-shadow"></div>
+                    </figure>
+                </li>
             </ul>
+            <a href="index.html" class="btn btn-small">再来一次</a>
             <a href="#" id="btn-discuss" class="btn btn-small">与朋友讨论</a>
-            <a href="#" id="btn-again" class="btn btn-small">再来一次</a>
         </section>
         <div id="share-layout" class="hide">
             <img src="img/icon/share.svg" alt="" />
@@ -47,5 +131,6 @@
                 单击右上角分享给朋友哦～
             </p>
         </div>
+        <script src="js/result.js" charset="utf-8"></script>
     </body>
 </html>
