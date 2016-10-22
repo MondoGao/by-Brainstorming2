@@ -1,5 +1,9 @@
 "use strict"
+var isDesktop = 'touchstart';
 window.onload = function() {
+    if(navigator.platform.indexOf("Win") == 0 || navigator.platform.indexOf("Mac") == 0 || navigator.platform == "X11" || navigator.platform.indexOf("Linux") == 0) {
+        isDesktop = 'click';
+    }
     bindControllerArea('front');
     fitScreen();
     bindCardList();
@@ -12,6 +16,9 @@ window.onload = function() {
     document.getElementById('share-layout').addEventListener('click', function(e) {
         toggleLayout(e, document.getElementById('share-layout'));
     });
+    if (document.body.clientHeight < document.querySelector("section").scrollHeight) {
+        document.body.className = "slim";
+    }
 };
 
 
@@ -160,7 +167,7 @@ function fitScreen() {
 function bindCardList() {
     var cards = document.querySelectorAll('.card-small');
     for (var i = 0; i < cards.length; i++) {
-        cards[i].addEventListener('touchstart',changeActiveCard);
+        cards[i].addEventListener(isDesktop,changeActiveCard);
     }
 }
 
@@ -184,11 +191,11 @@ function toggleLayout(e, ele) {
 
 function bindControllerArea() {
     var touchstartX;
-    document.querySelector('.card-front .next').addEventListener("touchstart", function(e) {
+    document.querySelector('.card-front .next').addEventListener(isDesktop, function(e) {
         e.stopPropagation();
         changeCard(-1);
     });
-    document.querySelector('.card-front .previous').addEventListener("touchstart", function(e) {
+    document.querySelector('.card-front .previous').addEventListener(isDesktop, function(e) {
         e.stopPropagation();
         changeCard(1);
     });

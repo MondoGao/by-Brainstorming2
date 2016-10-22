@@ -29,6 +29,14 @@ body {
     white-space: nowrap;
     background-color: #A4CCF0;
 }
+body.slim {
+    section {
+        padding-top: 1rem;
+    }
+    .btn {
+        margin-top: 0;
+    }
+}
 
 section {
     position: relative;
@@ -37,6 +45,7 @@ section {
     text-align: center;
     overflow-x: auto;
     overflow-x: hidden;
+    padding-top: 3.5rem;
 }
 
 .btn {
@@ -54,7 +63,8 @@ section {
 }
 
 #bg-wrap {
-    padding-top: 3.5rem;
+    position: relative;
+    display: inline-block;
     padding-bottom: .8rem;
 }
 
@@ -120,44 +130,44 @@ img:not(#brain) {
 #wheel1 {
     width: 0.827rem;  /* 62/75 */
     height: 0.827rem;  /* 62/75 */
-    top: 4rem; /* 150/37.5 */
-    left: 3.387rem; /* 127/37.5 */
+    top: .5rem; /* 150/37.5 */
+    left: 1.657rem; /* 127/37.5 */
 }
 #wheel2 {
     width: 0.64rem;  /* 48/75 */
     height: 0.64rem;  /* 48/75 */
-    top: 4.133rem; /* 155/37.5 */
-    left: 7.627rem; /* 286/37.5 */
+    top: 0.633rem; /* 155/37.5 */
+    left: 5.897rem; /* 286/37.5 */
 }
 #wheel3 {
     width: 1.28rem;  /* 96/75 */
     height: 1.28rem;  /* 96/75 */
-    top: 5.093rem; /* 191/37.5 */
-    left: 5.493rem; /* 206/37.5 */
+    top: 1.593rem; /* 191/37.5 */
+    left: 3.763rem; /* 206/37.5 */
     animation-duration: 4s !important;
 }
 #wheel4 {
     width: 0.853rem;  /* 64/75 */
     height: 0.853rem;  /* 64/75 */
-    top: 5.787rem; /* 217/37.5 */
-    left: 6.773rem; /* 254/37.5 */
+    top: 2.387rem; /* 217/37.5 */
+    left: 5rem; /* 254/37.5 */
 }
 #wheel5 {
     width: 1.093rem;  /* 82/75 */
     height: 1.093rem;  /* 82/75 */
-    top: 6.427rem; /* 241/37.5 */
-    left: 4.48rem; /* 168/37.5 */
+    top: 2.927rem; /* 241/37.5 */
+    left: 2.75rem; /* 168/37.5 */
     animation-duration: 3s !important;
 }
 #wheel6 {
     width: 0.853rem;  /* 64/75 */
     height: 0.853rem;  /* 64/75 */
-    top: 8.64rem; /* 324/37.5 */
-    left: 6.56rem; /* 246/37.5 */
+    top: 5.14rem; /* 324/37.5 */
+    left: 4.83rem; /* 246/37.5 */
 }
 #socket {
     width: 1.014rem; /* 76/37.5 */ /* 2.027/2 */
     height: 1.44rem; /* 108/37.5 * /* 2.88/2 */
-    top: 8.907rem; /* 334/37.5 */
-    left: 1.627rem; /* 61/37.5 */
+    top: 5.4rem; /* 334/37.5 */
+    left: -0.1rem; /* 61/37.5 */
 }
