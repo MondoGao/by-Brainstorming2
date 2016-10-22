@@ -3,6 +3,9 @@ window.onload = function() {
     fitScreen();
     window.onresize = fitScreen;
     document.querySelector('#btn-start').addEventListener('click',startBrainstorm);
+    if (document.body.clientHeight < document.querySelector("section").scrollHeight) {
+        document.body.className = "slim";
+    }
 }
 
 
