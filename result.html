@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>头脑风暴结果</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/result.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <p><span></span><span></span><span></span><span></span><span></span></p>
+            </header>
+            <div class="card-container card-front">
+                <!-- 前向箭头 -->
+                <div id="card-result" class="card-wrap">
+
+                </div>
+                <template id="card-template">
+                    <div class="card">
+                        <img src="#" alt="" />
+                        <header>
+                            <small></small>
+                            <span></span>
+                        </header>
+                        <p><span></span><span></span><span></span><br /><span></span><span></span><span></span></p>
+                    </div>
+                </template>
+                <!-- 后向箭头 -->
+                <div class="controller-area previous"></div>
+                <div class="controller-area next"></div>
+            </div>
+            <ul class="card-list">
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+            </ul>
+            <a href="#" id="btn-discuss" class="btn btn-small">与朋友讨论</a>
+            <a href="#" id="btn-again" class="btn btn-small">再来一次</a>
+        </section>
+        <div id="share-layout" class="hide">
+            <img src="img/icon/share.svg" alt="" />
+            <img src="img/icon/sharearrow.svg" alt="" />
+            <p>
+                单击右上角分享给朋友哦～
+            </p>
+        </div>
+    </body>
+</html>
