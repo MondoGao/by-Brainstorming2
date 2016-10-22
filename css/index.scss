@@ -1,0 +1,163 @@
+body, section, header, div, span, ul, li, p, img, figure, h3, a {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    &:hover, &:focus {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+}
+a {
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 37.5px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #A4CCF0;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+
+.btn {
+    display: block;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    width: 8.03rem;
+    height: 1.39rem;
+    line-height: 1.39rem;
+    font-size: 0.533rem; /* 20/37.5 */
+    background: #5189BA;
+    box-shadow: 0.05rem 0.11rem 0 #3D6086;
+    border-radius: 0.45rem;
+}
+
+#bg-wrap {
+    padding-top: 3.5rem;
+    padding-bottom: .8rem;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes stretch {
+    from {
+        height: 1.44rem;
+    }
+    50% {
+        height: 2rem;
+    }
+    to {
+        height: 1.44rem;
+    }
+}
+
+@keyframes stretch {
+    from {
+        height: 1.44rem;
+    }
+    50% {
+        height: 2rem;
+    }
+    to {
+        height: 1.44rem;
+    }
+}
+
+#brain {
+    position: relative;
+    width: 6.5rem;
+    height: auto;
+}
+.rotate {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+.stretch {
+    -webkit-animation: stretch 1s linear infinite;
+    animation: stretch 1s linear infinite;
+}
+img:not(#brain) {
+    position: absolute;
+}
+#wheel1 {
+    width: 0.827rem;  /* 62/75 */
+    height: 0.827rem;  /* 62/75 */
+    top: 4rem; /* 150/37.5 */
+    left: 3.387rem; /* 127/37.5 */
+}
+#wheel2 {
+    width: 0.64rem;  /* 48/75 */
+    height: 0.64rem;  /* 48/75 */
+    top: 4.133rem; /* 155/37.5 */
+    left: 7.627rem; /* 286/37.5 */
+}
+#wheel3 {
+    width: 1.28rem;  /* 96/75 */
+    height: 1.28rem;  /* 96/75 */
+    top: 5.093rem; /* 191/37.5 */
+    left: 5.493rem; /* 206/37.5 */
+    animation-duration: 4s !important;
+}
+#wheel4 {
+    width: 0.853rem;  /* 64/75 */
+    height: 0.853rem;  /* 64/75 */
+    top: 5.787rem; /* 217/37.5 */
+    left: 6.773rem; /* 254/37.5 */
+}
+#wheel5 {
+    width: 1.093rem;  /* 82/75 */
+    height: 1.093rem;  /* 82/75 */
+    top: 6.427rem; /* 241/37.5 */
+    left: 4.48rem; /* 168/37.5 */
+    animation-duration: 3s !important;
+}
+#wheel6 {
+    width: 0.853rem;  /* 64/75 */
+    height: 0.853rem;  /* 64/75 */
+    top: 8.64rem; /* 324/37.5 */
+    left: 6.56rem; /* 246/37.5 */
+}
+#socket {
+    width: 1.014rem; /* 76/37.5 */ /* 2.027/2 */
+    height: 1.44rem; /* 108/37.5 * /* 2.88/2 */
+    top: 8.907rem; /* 334/37.5 */
+    left: 1.627rem; /* 61/37.5 */
+}
