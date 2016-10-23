@@ -1,2 +1,212 @@
-body,section,header,div,span,ul,li,p,img,figure,h3,a{margin:0;border:0;padding:0;box-sizing:border-box}a,div{-webkit-tap-highlight-color:transparent}a:hover,a:focus,div:hover,div:focus{-webkit-tap-highlight-color:transparent}a{text-decoration:none}html{font-size:37.5px;height:100%;width:100%;overflow:hidden}body{height:100%;width:100%;overflow:hidden;white-space:nowrap;background-color:#A4CCF0}body.slim section{padding-top:1rem}body.slim .btn{margin-top:0}section{position:relative;height:100%;width:100%;text-align:center;overflow-x:auto;overflow-x:hidden;padding-top:3rem}.btn{display:block;color:#fff;margin:0 auto;margin-top:0.63rem;width:8.03rem;height:1.39rem;line-height:1.39rem;font-size:0.533rem;background:#5189BA;box-shadow:0.05rem 0.11rem 0 #3D6086;border-radius:0.45rem}#bg-wrap{position:relative;display:inline-block;padding-bottom:.8rem}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes stretch{from{height:1.44rem}50%{height:2rem}to{height:1.44rem}}@keyframes stretch{from{height:1.44rem}50%{height:2rem}to{height:1.44rem}}@-webkit-keyframes flow{from{stroke-dashoffset:0}to{stroke-dashoffset:100%}}@keyframes flow{from{stroke-dashoffset:0}to{stroke-dashoffset:100%}}#brain{position:relative;width:6.5rem;height:auto}.rotate{-webkit-animation:rotate 2s linear infinite;animation:rotate 2s linear infinite}.stretch{-webkit-animation:stretch 1s linear infinite;animation:stretch 1s linear infinite}.flow{-webkit-animation:flow 2s linear infinite;animation:flow 2s linear infinite}img:not(#brain),span{position:absolute}#wheel1{width:0.827rem;height:0.827rem;top:.5rem;left:1.657rem}#wheel2{width:0.64rem;height:0.64rem;top:0.633rem;left:5.897rem}#wheel3{width:1.28rem;height:1.28rem;top:1.593rem;left:3.763rem;animation-duration:4s !important}#wheel4{width:0.853rem;height:0.853rem;top:2.387rem;left:5rem}#wheel5{width:1.093rem;height:1.093rem;top:2.927rem;left:2.75rem;animation-duration:3s !important}#wheel6{width:0.853rem;height:0.853rem;top:5.14rem;left:4.83rem}#socket{width:1.014rem;height:1.44rem;top:5.4rem;left:-0.1rem}#line1{top:3.76rem;left:3.253rem}#line1 svg{width:0.587rem;height:2.107rem}#line2{top:6.24rem;left:1.36rem}#line2 svg{width:0.587rem;height:2.107rem}
+body, section, header, div, span, ul, li, p, img, figure, h3, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a, div {
+  -webkit-tap-highlight-color: transparent; }
+  a:hover, a:focus, div:hover, div:focus {
+    -webkit-tap-highlight-color: transparent; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 37.5px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #A4CCF0; }
+
+body.slim section {
+  padding-top: 1rem; }
+body.slim .btn {
+  margin-top: 0; }
+
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow-x: auto;
+  overflow-x: hidden;
+  padding-top: 3rem; }
+
+.btn {
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.63rem;
+  width: 8.03rem;
+  height: 1.39rem;
+  line-height: 1.39rem;
+  font-size: 0.533rem;
+  /* 20/37.5 */
+  background: #5189BA;
+  box-shadow: 0.05rem 0.11rem 0 #3D6086;
+  border-radius: 0.45rem; }
+
+#bg-wrap {
+  position: relative;
+  display: inline-block;
+  padding-bottom: .8rem; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes stretch {
+  from {
+    height: 1.44rem; }
+  50% {
+    height: 2rem; }
+  to {
+    height: 1.44rem; } }
+@keyframes stretch {
+  from {
+    height: 1.44rem; }
+  50% {
+    height: 2rem; }
+  to {
+    height: 1.44rem; } }
+@-webkit-keyframes flow {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 100%; } }
+@keyframes flow {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 100%; } }
+#brain {
+  position: relative;
+  width: 6.5rem;
+  height: auto; }
+
+.rotate {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite; }
+
+.stretch {
+  -webkit-animation: stretch 1s linear infinite;
+  animation: stretch 1s linear infinite; }
+
+.flow {
+  -webkit-animation: flow 2s linear infinite;
+  animation: flow 2s linear infinite; }
+
+img:not(#brain), span {
+  position: absolute; }
+
+#wheel1 {
+  width: 0.827rem;
+  /* 62/75 */
+  height: 0.827rem;
+  /* 62/75 */
+  top: .5rem;
+  /* 150/37.5 */
+  left: 1.657rem;
+  /* 127/37.5 */ }
+
+#wheel2 {
+  width: 0.64rem;
+  /* 48/75 */
+  height: 0.64rem;
+  /* 48/75 */
+  top: 0.633rem;
+  /* 155/37.5 */
+  left: 5.897rem;
+  /* 286/37.5 */ }
+
+#wheel3 {
+  width: 1.28rem;
+  /* 96/75 */
+  height: 1.28rem;
+  /* 96/75 */
+  top: 1.593rem;
+  /* 191/37.5 */
+  left: 3.763rem;
+  /* 206/37.5 */
+  animation-duration: 4s !important; }
+
+#wheel4 {
+  width: 0.853rem;
+  /* 64/75 */
+  height: 0.853rem;
+  /* 64/75 */
+  top: 2.387rem;
+  /* 217/37.5 */
+  left: 5rem;
+  /* 254/37.5 */ }
+
+#wheel5 {
+  width: 1.093rem;
+  /* 82/75 */
+  height: 1.093rem;
+  /* 82/75 */
+  top: 2.927rem;
+  /* 241/37.5 */
+  left: 2.75rem;
+  /* 168/37.5 */
+  animation-duration: 3s !important; }
+
+#wheel6 {
+  width: 0.853rem;
+  /* 64/75 */
+  height: 0.853rem;
+  /* 64/75 */
+  top: 5.14rem;
+  /* 324/37.5 */
+  left: 4.83rem;
+  /* 246/37.5 */ }
+
+#socket {
+  width: 1.014rem;
+  /* 76/37.5 */
+  /* 2.027/2 */
+  height: 1.44rem;
+  /* 108/37.5 * /* 2.88/2 */
+  top: 5.4rem;
+  /* 334/37.5 */
+  left: -0.1rem;
+  /* 61/37.5 */ }
+
+#line1 {
+  top: 3.76rem;
+  /* 141/37.5 */
+  left: 3.253rem;
+  /* 122/37.5 */ }
+  #line1 svg {
+    width: 0.587rem;
+    /* 22/37.5 */
+    height: 2.107rem;
+    /* 79/37.5 */ }
+
+#line2 {
+  top: 6.24rem;
+  /* 234/37.5 */
+  left: 1.36rem;
+  /* 51/37.5 */ }
+  #line2 svg {
+    width: 0.587rem;
+    /* 22/37.5 */
+    height: 2.107rem;
+    /* 79/37.5 */ }
+
 /*# sourceMappingURL=index.css.map */

@@ -214,17 +214,14 @@ function bindControllerArea() {
         }
     });
 }
-
+var lastActive;
 function changeCardList() {
     var cards = document.querySelectorAll('.card-small');
     var active = document.querySelector('.card[data-index="2"]').dataset.order;
-    for(var i = 0; i < cards.length; i++) {
-        if (i != active) {
-            cards[i].classList.remove('active');
-        } else {
-            cards[i].classList.add('active');
-        }
-    }
+    cards[active].classList.add('active');
+    if(lastActive)
+        cards[lastActive].classList.remove('active');
+    lastActive = active;
 }
 var timer;
 function changeCard(direct) {
@@ -254,6 +251,7 @@ function changeCard(direct) {
             changeCardList();
         }
         // }
-
+    } else {
+        changeCardList();
     }
 }
