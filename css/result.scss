@@ -67,12 +67,25 @@ section {
             position: relative;
             overflow: hidden;
             display: inline-block;
+            max-width: 9.9rem;
             padding: 0 1.5rem; /* 24/37.5 */
             font-size: 0.48rem; /* 18/37.5 */
             line-height: 1.2rem;
             background: #5188BE;
             color: #fff;
+            white-space: nowrap;
             box-shadow: 0px 5px 10px -7px #5188BE;
+            transition: width .5s;
+            &.long-words {
+                width: 100%;
+                padding: 0;
+                &::before {
+                    left: -1.2rem;
+                }
+                &::after {
+                    right: -1.2rem;
+                }
+            }
             &::before, &::after {
                 position: absolute;
                 content: "";
