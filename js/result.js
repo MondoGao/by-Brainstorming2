@@ -718,9 +718,24 @@ function fillCard() {
     //         img.src = "img\/icon\/" + t + '\/' + cardData[t][i].eng + ".svg";
     //     }
     // }
-    document.title = "在"+title[0]+"的"+title[1]+"里，我和"+title[2]+"用"+title[3]+"开始"+(title[4].length < 2 ? title[4]+title[4]+title[4] : title[4]);
-
+    document.title = "在"+title[0]+"的"+title[1]+"里，我和"+title[2]+"用"+title[3]+"开始"+(title[4].length < 2 ? title[4]+title[4]+title[4] : title[4])+"。来一起头脑风暴吧～";
+    // debugger
+    funEgg(title);
     console.log(document.title);
+}
+
+var eggs = {
+    "情人节": function() {
+        document.querySelector(".card.card-time img").addEventListener("touchstart",function() {
+            this.src = "img\/icon\/time\/Valentine's Day_egg.svg";
+        });
+    }
+};
+var funEgg = function(title) {
+    for(var t in title) {
+        var temp = typeof(eggs[title[t]])=='function' ? eggs[title[t]] : function() {};
+        temp();
+    }
 }
 
 function fitScreen() {

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="257px"
+   height="245px"
+   viewBox="0 0 257 245"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Valentine's Day_egg.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>情人节</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.96326531"
+     inkscape:cx="130.57627"
+     inkscape:cy="122.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Artboard" />
+  <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">情人节</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="Page-1"
+     stroke-width="1"
+     stroke="none"
+     fill-rule="evenodd"
+     fill="none">
+    <g
+       id="Artboard"
+       transform="translate(-538.000000, -384.000000)"
+       fill="#5382AF">
+      <path
+         d="M 654.53554,467.91107 671.57199,450.83879 604.79172,384 538,450.83879 l 17.04826,17.07228 c 0,0 21.85145,-21.8659 37.6863,-37.71209 l 0,93.04878 c -23.52732,5.46951 -41.08922,26.46 -41.08922,51.66849 0,29.38782 23.79076,53.19437 53.14603,53.19437 29.34488,0 53.15926,-23.80655 53.15926,-53.19437 0,-25.20849 -17.5866,-46.19898 -41.10103,-51.66849 l 0,-93.04878 c 15.83485,15.84619 37.68594,37.71209 37.68594,37.71209 z"
+         id="情人节"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccssscccc" />
+      <path
+         d="m 778.91904,543.68238 17.03645,17.07228 -66.78027,66.83879 -66.79172,-66.83879 17.04826,-17.07228 c 0,0 21.85145,21.8659 37.6863,37.71209 l 0,-93.04878 c -23.52732,-5.46951 -41.08922,-26.46 -41.08922,-51.66849 0,-29.38782 23.79076,-53.19437 53.14603,-53.19437 29.34488,0 53.15926,23.80655 53.15926,53.19437 0,25.20849 -17.5866,46.19898 -41.10103,51.66849 l 0,93.04878 c 15.83485,-15.84619 37.68594,-37.71209 37.68594,-37.71209 z"
+         id="情人节-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccssscccc" />
+    </g>
+  </g>
+</svg>

@@ -6,10 +6,16 @@
 
 #### Fixed
 - 补充四个缺失的图标（Space station，Beach，Baby和Ghost)
-- 尝试修复微信分享的icon
 
 #### Preparing
 - 使用nodejs搭建服务器
+
+### 0.2.3 - 2016-10-24
+### Added
+- 为彩蛋做准备
+
+#### Fixed
+- 修复微信分享的icon
 
 ### 0.2.2 - 2016-10-24
 #### Fixed
