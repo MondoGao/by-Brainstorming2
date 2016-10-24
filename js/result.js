@@ -715,8 +715,8 @@ function fillCard() {
     //         img.src = "img\/icon\/" + t + '\/' + cardData[t][i].eng + ".svg";
     //     }
     // }
-    document.title = "我在头脑风暴抽到了 " + title.toString();
-    console.log(title);
+    document.title = "在"+title[0]+"的"+title[1]+"里，我和"+title[2]+"用"+title[3]+"进行了一场"+title[4]+"游戏";
+    console.log(document.title);
 }
 
 function fitScreen() {

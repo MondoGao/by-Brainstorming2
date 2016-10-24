@@ -6,9 +6,14 @@
 
 #### Fixed
 - 补充四个缺失的图标（Space station，Beach，Baby和Ghost)
+- 尝试修复微信分享的icon
 
 #### Preparing
 - 使用nodejs搭建服务器
+
+### 0.2.1 - 2016-10-24
+#### Changed
+- [文明用语]的标题
 
 ### 0.2.0 - 2016-10-24
 #### Added
