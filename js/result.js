@@ -707,6 +707,9 @@ function fillCard() {
             words[j].innerHTML = cardData[type[i]][result[i].index].words[j] || "";
         }
     }
+    if(title.join("").length > 12) {
+        document.getElementById("card-name").className = "long-words";
+    }
     // // test for words
     // var i;
     // for(var t of type) {
@@ -715,7 +718,8 @@ function fillCard() {
     //         img.src = "img\/icon\/" + t + '\/' + cardData[t][i].eng + ".svg";
     //     }
     // }
-    document.title = "在"+title[0]+"的"+title[1]+"里，我和"+title[2]+"用"+title[3]+"进行了一场"+title[4]+"游戏";
+    document.title = "在"+title[0]+"的"+title[1]+"里，我和"+title[2]+"用"+title[3]+"开始"+(title[4].length < 2 ? title[4]+title[4]+title[4] : title[4]);
+
     console.log(document.title);
 }
 
