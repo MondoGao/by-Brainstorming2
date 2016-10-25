@@ -4,11 +4,19 @@
 #### Added
 - 服务器端动态获取卡片数据
 
-#### Fixed
-- 补充四个缺失的图标（Space station，Beach，Baby和Ghost)
+
 
 #### Preparing
 - 使用nodejs搭建服务器
+
+### 0.2.4 - 2016-10-25
+#### Changed
+- 在凌晨次重新改为返回主页
+
+#### Fixed
+- 补充四个缺失的图标（Space station，Beach，Baby和Ghost)
+- 修复点击已激活卡片列表项的显示问题
+- 补充默认字体的设置并更改一些行高
 
 ### 0.2.3 - 2016-10-24
 ### Added

@@ -4,7 +4,8 @@ body, section, header, div, span, ul, li, p, img, figure, h3, a {
   padding: 0;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  font-family: Helvetica, sans-serif; }
 
 a, div {
   -webkit-tap-highlight-color: transparent; }
@@ -68,10 +69,8 @@ section {
       section > header p.long-words {
         width: 100%;
         padding: 0; }
-        section > header p.long-words::before {
-          left: -1.2rem; }
-        section > header p.long-words::after {
-          right: -1.2rem; }
+        section > header p.long-words::before, section > header p.long-words::after {
+          display: none; }
       section > header p::before, section > header p::after {
         position: absolute;
         content: "";
@@ -185,7 +184,7 @@ a {
   .card-front .card header {
     font-size: 1.013rem;
     /* 38/37.5 */
-    line-height: 1; }
+    line-height: 1.15; }
     .card-front .card header small {
       display: block;
       font-size: .4em; }

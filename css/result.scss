@@ -5,6 +5,7 @@ body, section, header, div, span, ul, li, p, img, figure, h3, a {
     box-sizing: border-box;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-family: Helvetica, sans-serif;
 }
 a, div {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -79,11 +80,8 @@ section {
             &.long-words {
                 width: 100%;
                 padding: 0;
-                &::before {
-                    left: -1.2rem;
-                }
-                &::after {
-                    right: -1.2rem;
+                &::before, &::after {
+                    display: none;
                 }
             }
             &::before, &::after {
@@ -282,7 +280,7 @@ $card-color: (
         }
         header {
             font-size: 1.013rem; /* 38/37.5 */
-            line-height: 1;
+            line-height: 1.15;
             small {
                 display: block;
                 font-size: .4em;
