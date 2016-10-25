@@ -13,14 +13,33 @@ window.onload = function() {
     document.getElementById('btn-discuss').addEventListener("click", function(e) {
         toggleLayout(e, document.getElementById('share-layout'));
     });
-    document.getElementById('btn-again').addEventListener("click", function(e) {
-        startBrainstorm(e);
-    });
+    // document.getElementById('btn-again').addEventListener("click", function(e) {
+    //     startBrainstorm(e);
+    // });
     document.getElementById('share-layout').addEventListener('click', function(e) {
         toggleLayout(e, document.getElementById('share-layout'));
     });
     if (document.body.clientHeight < document.querySelector("section").scrollHeight) {
         document.body.className = "slim";
+    }
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion',deviceMotionHandler, false);
+    }
+    var speed = 20;//speed
+    var x,y,z,lastX,lastY,lastZ;
+    x = y = z = lastX = lastY = lastZ = 0;
+    function deviceMotionHandler(eventData) {
+        var acceleration =eventData.accelerationIncludingGravity;
+        x = acceleration.x;
+        y = acceleration.y;
+        z = acceleration.z;
+        if(Math.abs(x-lastX) > speed || Math.abs(y-lastY) > speed || Math.abs(z-lastZ) > speed) {
+            //简单的摇一摇触发代码
+            alert("别晃我！我又不是摇一摇！卡都要晃散了！");
+        }
+        lastX = x;
+        lastY = y;
+        lastZ = z;
     }
 };
 
@@ -707,7 +726,7 @@ function fillCard() {
             words[j].innerHTML = cardData[type[i]][result[i].index].words[j] || "";
         }
     }
-    if(title.join("").length > 12) {
+    if(title.join("").length > 11) {
         document.getElementById("card-name").className = "long-words";
     }
     // // test for words
@@ -818,9 +837,9 @@ var lastActive;
 function changeCardList() {
     var cards = document.querySelectorAll('.card-small');
     var active = document.querySelector('.card[data-index="2"]').dataset.order;
-    cards[active].classList.add('active');
     if(lastActive)
         cards[lastActive].classList.remove('active');
+    cards[active].classList.add('active');
     lastActive = active;
 }
 var timer;

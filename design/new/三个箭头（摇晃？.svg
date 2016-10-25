@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="73px" height="144px" viewBox="0 0 73 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14" transform="translate(-131.000000, -194.000000)">
+            <g id="Group-10" transform="translate(128.000000, 194.000000)">
+                <path d="M26.9678332,70.8203501 C26.9678332,70.8203501 22.8511875,91.6279777 19.7225125,101.612382 C16.4186049,112.155999 7.67008563,132.404414 7.67008563,132.404414" id="Line" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="2"></path>
+                <path d="M28.5,74.5 C28.5,74.5 46.6811996,90.1176477 54.2946445,99 C60.6811996,106.450981 70.5,123.5 70.5,123.5" id="Line" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="2"></path>
+                <path d="M45.3616956,74.6661007 C45.3616956,74.6661007 41.2450498,95.4737282 38.1163748,105.458133 C34.8124672,116.00175 26.063948,136.250165 26.063948,136.250165" id="Line" stroke="#FFFFFF" stroke-linecap="square" stroke-dasharray="2" transform="translate(35.712822, 105.458133) rotate(-33.000000) translate(-35.712822, -105.458133) "></path>
+                <circle id="Oval-9" fill="#5583AD" cx="24" cy="3" r="3"></circle>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(6.124442, 135.500000) rotate(-155.000000) translate(-6.124442, -135.500000) " points="6.12444227 133 10.6244423 138 1.62444227 138"></polygon>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(72.019608, 127.146605) rotate(-199.000000) translate(-72.019608, -127.146605) " points="72.0196078 124.646605 76.5196078 129.646605 67.5196078 129.646605"></polygon>
+                <circle id="Oval-10" fill="#FFFFFF" cx="45" cy="141" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
